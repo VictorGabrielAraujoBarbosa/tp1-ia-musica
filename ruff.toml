@@ -1,0 +1,7 @@
+# Lint configuration. Run:  .venv/bin/ruff check engine tools
+line-length = 110
+target-version = "py311"
+
+[lint]
+# Correctness and import hygiene; formatting is intentionally not enforced.
+select = ["E4", "E7", "E9", "F", "I"]

@@ -21,4 +21,4 @@ run_piece comeback-b comeback
 run_piece domination-a domination
 
 echo
-$PY tools/stats.py output/*/*.sync.json
+$PY tools/stats.py output/[!_]*/*.sync.json

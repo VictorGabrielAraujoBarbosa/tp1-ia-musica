@@ -1,0 +1,2478 @@
+{
+ "format": "gm-sync/1",
+ "bpm": 140,
+ "bars": [
+  {
+   "i": 0,
+   "t_music": 0.0,
+   "t_race": 0.0,
+   "meter": [
+    7,
+    8
+   ],
+   "tension": 0.6,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.0,
+    "opp": 0.0,
+    "police": null,
+    "gap": 0.0,
+    "police_dist": null,
+    "phase": 0.0
+   }
+  },
+  {
+   "i": 1,
+   "t_music": 1.5,
+   "t_race": 1.5,
+   "meter": [
+    7,
+    8
+   ],
+   "tension": 0.6,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.0,
+    "opp": 0.0,
+    "police": null,
+    "gap": 0.0,
+    "police_dist": null,
+    "phase": 0.0
+   }
+  },
+  {
+   "i": 2,
+   "t_music": 3.0,
+   "t_race": 3.0,
+   "meter": [
+    4,
+    4
+   ],
+   "tension": 0.3,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": false
+   },
+   "state": {
+    "you": 0.0244,
+    "opp": 0.0149,
+    "police": null,
+    "gap": 0.0095,
+    "police_dist": null,
+    "phase": 0.0244
+   }
+  },
+  {
+   "i": 3,
+   "t_music": 4.7143,
+   "t_race": 4.7143,
+   "meter": [
+    4,
+    4
+   ],
+   "tension": 0.3,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": false
+   },
+   "state": {
+    "you": 0.0244,
+    "opp": 0.0149,
+    "police": null,
+    "gap": 0.0095,
+    "police_dist": null,
+    "phase": 0.0244
+   }
+  },
+  {
+   "i": 4,
+   "t_music": 6.4286,
+   "t_race": 6.4286,
+   "meter": [
+    4,
+    4
+   ],
+   "tension": 0.3,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": false
+   },
+   "state": {
+    "you": 0.0512,
+    "opp": 0.032,
+    "police": null,
+    "gap": 0.0192,
+    "police_dist": null,
+    "phase": 0.0512
+   }
+  },
+  {
+   "i": 5,
+   "t_music": 8.1429,
+   "t_race": 8.1429,
+   "meter": [
+    4,
+    4
+   ],
+   "tension": 0.3,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": false
+   },
+   "state": {
+    "you": 0.0512,
+    "opp": 0.032,
+    "police": null,
+    "gap": 0.0192,
+    "police_dist": null,
+    "phase": 0.0512
+   }
+  },
+  {
+   "i": 6,
+   "t_music": 9.8571,
+   "t_race": 9.8571,
+   "meter": [
+    4,
+    4
+   ],
+   "tension": 0.3,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": false
+   },
+   "state": {
+    "you": 0.0785,
+    "opp": 0.0554,
+    "police": null,
+    "gap": 0.0231,
+    "police_dist": null,
+    "phase": 0.0785
+   }
+  },
+  {
+   "i": 7,
+   "t_music": 11.5714,
+   "t_race": 11.5714,
+   "meter": [
+    4,
+    4
+   ],
+   "tension": 0.3,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": false
+   },
+   "state": {
+    "you": 0.0785,
+    "opp": 0.0554,
+    "police": null,
+    "gap": 0.0231,
+    "police_dist": null,
+    "phase": 0.0785
+   }
+  },
+  {
+   "i": 8,
+   "t_music": 13.2857,
+   "t_race": 13.2857,
+   "meter": [
+    4,
+    4
+   ],
+   "tension": 0.3,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": false
+   },
+   "state": {
+    "you": 0.1064,
+    "opp": 0.0853,
+    "police": null,
+    "gap": 0.0211,
+    "police_dist": null,
+    "phase": 0.1064
+   }
+  },
+  {
+   "i": 9,
+   "t_music": 15.0,
+   "t_race": 15.0,
+   "meter": [
+    4,
+    4
+   ],
+   "tension": 0.3,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": false
+   },
+   "state": {
+    "you": 0.1064,
+    "opp": 0.0853,
+    "police": null,
+    "gap": 0.0211,
+    "police_dist": null,
+    "phase": 0.1064
+   }
+  },
+  {
+   "i": 10,
+   "t_music": 16.7143,
+   "t_race": 16.7143,
+   "meter": [
+    4,
+    4
+   ],
+   "tension": 0.3,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": false
+   },
+   "state": {
+    "you": 0.1332,
+    "opp": 0.1214,
+    "police": null,
+    "gap": 0.0117,
+    "police_dist": null,
+    "phase": 0.1332
+   }
+  },
+  {
+   "i": 11,
+   "t_music": 18.4286,
+   "t_race": 18.4286,
+   "meter": [
+    4,
+    4
+   ],
+   "tension": 0.3,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": false
+   },
+   "state": {
+    "you": 0.1332,
+    "opp": 0.1214,
+    "police": null,
+    "gap": 0.0117,
+    "police_dist": null,
+    "phase": 0.1332
+   }
+  },
+  {
+   "i": 12,
+   "t_music": 20.1429,
+   "t_race": 20.1429,
+   "meter": [
+    7,
+    8
+   ],
+   "tension": 0.6,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.1607,
+    "opp": 0.164,
+    "police": null,
+    "gap": -0.0032,
+    "police_dist": null,
+    "phase": 0.164
+   }
+  },
+  {
+   "i": 13,
+   "t_music": 21.6429,
+   "t_race": 21.6429,
+   "meter": [
+    7,
+    8
+   ],
+   "tension": 0.6,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.1607,
+    "opp": 0.164,
+    "police": null,
+    "gap": -0.0032,
+    "police_dist": null,
+    "phase": 0.164
+   }
+  },
+  {
+   "i": 14,
+   "t_music": 23.1429,
+   "t_race": 23.1429,
+   "meter": [
+    7,
+    8
+   ],
+   "tension": 0.6,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.1806,
+    "opp": 0.2018,
+    "police": null,
+    "gap": -0.0213,
+    "police_dist": null,
+    "phase": 0.2018
+   }
+  },
+  {
+   "i": 15,
+   "t_music": 24.6429,
+   "t_race": 24.6429,
+   "meter": [
+    7,
+    8
+   ],
+   "tension": 0.6,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.1806,
+    "opp": 0.2018,
+    "police": null,
+    "gap": -0.0213,
+    "police_dist": null,
+    "phase": 0.2018
+   }
+  },
+  {
+   "i": 16,
+   "t_music": 26.1429,
+   "t_race": 26.1429,
+   "meter": [
+    7,
+    8
+   ],
+   "tension": 0.6,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.2019,
+    "opp": 0.2469,
+    "police": null,
+    "gap": -0.045,
+    "police_dist": null,
+    "phase": 0.2469
+   }
+  },
+  {
+   "i": 17,
+   "t_music": 27.6429,
+   "t_race": 27.6429,
+   "meter": [
+    7,
+    8
+   ],
+   "tension": 0.6,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.2019,
+    "opp": 0.2469,
+    "police": null,
+    "gap": -0.045,
+    "police_dist": null,
+    "phase": 0.2469
+   }
+  },
+  {
+   "i": 18,
+   "t_music": 29.1429,
+   "t_race": 29.1429,
+   "meter": [
+    7,
+    8
+   ],
+   "tension": 0.5,
+   "layers": {
+    "drums": false,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.2224,
+    "opp": 0.2859,
+    "police": null,
+    "gap": -0.0636,
+    "police_dist": null,
+    "phase": 0.2859
+   }
+  },
+  {
+   "i": 19,
+   "t_music": 30.6429,
+   "t_race": 30.6429,
+   "meter": [
+    7,
+    8
+   ],
+   "tension": 0.5,
+   "layers": {
+    "drums": false,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.2224,
+    "opp": 0.2859,
+    "police": null,
+    "gap": -0.0636,
+    "police_dist": null,
+    "phase": 0.2859
+   }
+  },
+  {
+   "i": 20,
+   "t_music": 32.1429,
+   "t_race": 32.1429,
+   "meter": [
+    7,
+    8
+   ],
+   "tension": 0.5,
+   "layers": {
+    "drums": false,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.2439,
+    "opp": 0.3146,
+    "police": null,
+    "gap": -0.0707,
+    "police_dist": null,
+    "phase": 0.3146
+   }
+  },
+  {
+   "i": 21,
+   "t_music": 33.6429,
+   "t_race": 33.6429,
+   "meter": [
+    7,
+    8
+   ],
+   "tension": 0.5,
+   "layers": {
+    "drums": false,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.2439,
+    "opp": 0.3146,
+    "police": null,
+    "gap": -0.0707,
+    "police_dist": null,
+    "phase": 0.3146
+   }
+  },
+  {
+   "i": 22,
+   "t_music": 35.1429,
+   "t_race": 35.1429,
+   "meter": [
+    7,
+    8
+   ],
+   "tension": 0.5,
+   "layers": {
+    "drums": false,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.2652,
+    "opp": 0.3426,
+    "police": null,
+    "gap": -0.0774,
+    "police_dist": null,
+    "phase": 0.3426
+   }
+  },
+  {
+   "i": 23,
+   "t_music": 36.6429,
+   "t_race": 36.6429,
+   "meter": [
+    7,
+    8
+   ],
+   "tension": 0.5,
+   "layers": {
+    "drums": false,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.2652,
+    "opp": 0.3426,
+    "police": null,
+    "gap": -0.0774,
+    "police_dist": null,
+    "phase": 0.3426
+   }
+  },
+  {
+   "i": 24,
+   "t_music": 38.1429,
+   "t_race": 38.1429,
+   "meter": [
+    7,
+    8
+   ],
+   "tension": 0.5,
+   "layers": {
+    "drums": false,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.287,
+    "opp": 0.371,
+    "police": null,
+    "gap": -0.084,
+    "police_dist": null,
+    "phase": 0.371
+   }
+  },
+  {
+   "i": 25,
+   "t_music": 39.6429,
+   "t_race": 39.6429,
+   "meter": [
+    7,
+    8
+   ],
+   "tension": 0.5,
+   "layers": {
+    "drums": false,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.287,
+    "opp": 0.371,
+    "police": null,
+    "gap": -0.084,
+    "police_dist": null,
+    "phase": 0.371
+   }
+  },
+  {
+   "i": 26,
+   "t_music": 41.1429,
+   "t_race": 41.1429,
+   "meter": [
+    7,
+    8
+   ],
+   "tension": 0.5,
+   "layers": {
+    "drums": false,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.3081,
+    "opp": 0.3984,
+    "police": 0.0526,
+    "gap": -0.0903,
+    "police_dist": 0.2554,
+    "phase": 0.3984
+   }
+  },
+  {
+   "i": 27,
+   "t_music": 42.6429,
+   "t_race": 42.6429,
+   "meter": [
+    7,
+    8
+   ],
+   "tension": 0.5,
+   "layers": {
+    "drums": false,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.3081,
+    "opp": 0.3984,
+    "police": 0.0526,
+    "gap": -0.0903,
+    "police_dist": 0.2554,
+    "phase": 0.3984
+   }
+  },
+  {
+   "i": 28,
+   "t_music": 44.1429,
+   "t_race": 44.1429,
+   "meter": [
+    7,
+    8
+   ],
+   "tension": 0.5,
+   "layers": {
+    "drums": false,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.3282,
+    "opp": 0.4258,
+    "police": 0.0848,
+    "gap": -0.0977,
+    "police_dist": 0.2434,
+    "phase": 0.4258
+   }
+  },
+  {
+   "i": 29,
+   "t_music": 45.6429,
+   "t_race": 45.6429,
+   "meter": [
+    7,
+    8
+   ],
+   "tension": 0.5,
+   "layers": {
+    "drums": false,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.3282,
+    "opp": 0.4258,
+    "police": 0.0848,
+    "gap": -0.0977,
+    "police_dist": 0.2434,
+    "phase": 0.4258
+   }
+  },
+  {
+   "i": 30,
+   "t_music": 47.1429,
+   "t_race": 47.1429,
+   "meter": [
+    7,
+    8
+   ],
+   "tension": 0.5,
+   "layers": {
+    "drums": false,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.3474,
+    "opp": 0.4421,
+    "police": 0.116,
+    "gap": -0.0947,
+    "police_dist": 0.2314,
+    "phase": 0.4421
+   }
+  },
+  {
+   "i": 31,
+   "t_music": 48.6429,
+   "t_race": 48.6429,
+   "meter": [
+    7,
+    8
+   ],
+   "tension": 0.5,
+   "layers": {
+    "drums": false,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.3474,
+    "opp": 0.4421,
+    "police": 0.116,
+    "gap": -0.0947,
+    "police_dist": 0.2314,
+    "phase": 0.4421
+   }
+  },
+  {
+   "i": 32,
+   "t_music": 50.1429,
+   "t_race": 50.1429,
+   "meter": [
+    7,
+    8
+   ],
+   "tension": 0.5,
+   "layers": {
+    "drums": false,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.3672,
+    "opp": 0.4536,
+    "police": 0.1478,
+    "gap": -0.0864,
+    "police_dist": 0.2194,
+    "phase": 0.4536
+   }
+  },
+  {
+   "i": 33,
+   "t_music": 51.6429,
+   "t_race": 51.6429,
+   "meter": [
+    7,
+    8
+   ],
+   "tension": 0.5,
+   "layers": {
+    "drums": false,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.3672,
+    "opp": 0.4536,
+    "police": 0.1478,
+    "gap": -0.0864,
+    "police_dist": 0.2194,
+    "phase": 0.4536
+   }
+  },
+  {
+   "i": 34,
+   "t_music": 53.1429,
+   "t_race": 53.1429,
+   "meter": [
+    7,
+    8
+   ],
+   "tension": 0.5,
+   "layers": {
+    "drums": false,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.3856,
+    "opp": 0.4651,
+    "police": 0.1781,
+    "gap": -0.0795,
+    "police_dist": 0.2074,
+    "phase": 0.4651
+   }
+  },
+  {
+   "i": 35,
+   "t_music": 54.6429,
+   "t_race": 54.6429,
+   "meter": [
+    7,
+    8
+   ],
+   "tension": 0.5,
+   "layers": {
+    "drums": false,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.3856,
+    "opp": 0.4651,
+    "police": 0.1781,
+    "gap": -0.0795,
+    "police_dist": 0.2074,
+    "phase": 0.4651
+   }
+  },
+  {
+   "i": 36,
+   "t_music": 56.1429,
+   "t_race": 56.1429,
+   "meter": [
+    7,
+    8
+   ],
+   "tension": 0.6,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.4049,
+    "opp": 0.4754,
+    "police": 0.2095,
+    "gap": -0.0705,
+    "police_dist": 0.1954,
+    "phase": 0.4754
+   }
+  },
+  {
+   "i": 37,
+   "t_music": 57.6429,
+   "t_race": 57.6429,
+   "meter": [
+    7,
+    8
+   ],
+   "tension": 0.6,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.4049,
+    "opp": 0.4754,
+    "police": 0.2095,
+    "gap": -0.0705,
+    "police_dist": 0.1954,
+    "phase": 0.4754
+   }
+  },
+  {
+   "i": 38,
+   "t_music": 59.1429,
+   "t_race": 59.1429,
+   "meter": [
+    7,
+    8
+   ],
+   "tension": 0.6,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.4241,
+    "opp": 0.4829,
+    "police": 0.2407,
+    "gap": -0.0588,
+    "police_dist": 0.1834,
+    "phase": 0.4829
+   }
+  },
+  {
+   "i": 39,
+   "t_music": 60.6429,
+   "t_race": 60.6429,
+   "meter": [
+    7,
+    8
+   ],
+   "tension": 0.6,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.4241,
+    "opp": 0.4829,
+    "police": 0.2407,
+    "gap": -0.0588,
+    "police_dist": 0.1834,
+    "phase": 0.4829
+   }
+  },
+  {
+   "i": 40,
+   "t_music": 62.1429,
+   "t_race": 62.1429,
+   "meter": [
+    7,
+    8
+   ],
+   "tension": 0.6,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.443,
+    "opp": 0.4901,
+    "police": 0.2744,
+    "gap": -0.0471,
+    "police_dist": 0.1685,
+    "phase": 0.4901
+   }
+  },
+  {
+   "i": 41,
+   "t_music": 63.6429,
+   "t_race": 63.6429,
+   "meter": [
+    7,
+    8
+   ],
+   "tension": 0.6,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.443,
+    "opp": 0.4901,
+    "police": 0.2744,
+    "gap": -0.0471,
+    "police_dist": 0.1685,
+    "phase": 0.4901
+   }
+  },
+  {
+   "i": 42,
+   "t_music": 65.1429,
+   "t_race": 65.1429,
+   "meter": [
+    7,
+    8
+   ],
+   "tension": 0.6,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.4612,
+    "opp": 0.4953,
+    "police": 0.3087,
+    "gap": -0.0341,
+    "police_dist": 0.1525,
+    "phase": 0.4953
+   }
+  },
+  {
+   "i": 43,
+   "t_music": 66.6429,
+   "t_race": 66.6429,
+   "meter": [
+    7,
+    8
+   ],
+   "tension": 0.6,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.4612,
+    "opp": 0.4953,
+    "police": 0.3087,
+    "gap": -0.0341,
+    "police_dist": 0.1525,
+    "phase": 0.4953
+   }
+  },
+  {
+   "i": 44,
+   "t_music": 68.1429,
+   "t_race": 68.1429,
+   "meter": [
+    7,
+    8
+   ],
+   "tension": 0.6,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.4781,
+    "opp": 0.4957,
+    "police": 0.3416,
+    "gap": -0.0176,
+    "police_dist": 0.1365,
+    "phase": 0.4957
+   }
+  },
+  {
+   "i": 45,
+   "t_music": 69.6429,
+   "t_race": 69.6429,
+   "meter": [
+    7,
+    8
+   ],
+   "tension": 0.6,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.4781,
+    "opp": 0.4957,
+    "police": 0.3416,
+    "gap": -0.0176,
+    "police_dist": 0.1365,
+    "phase": 0.4957
+   }
+  },
+  {
+   "i": 46,
+   "t_music": 71.1429,
+   "t_race": 71.1429,
+   "meter": [
+    4,
+    4
+   ],
+   "tension": 0.3,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": false
+   },
+   "state": {
+    "you": 0.4968,
+    "opp": 0.4966,
+    "police": 0.3763,
+    "gap": 0.0002,
+    "police_dist": 0.1205,
+    "phase": 0.4968
+   }
+  },
+  {
+   "i": 47,
+   "t_music": 72.8571,
+   "t_race": 72.8571,
+   "meter": [
+    4,
+    4
+   ],
+   "tension": 0.3,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": false
+   },
+   "state": {
+    "you": 0.4968,
+    "opp": 0.4966,
+    "police": 0.3763,
+    "gap": 0.0002,
+    "police_dist": 0.1205,
+    "phase": 0.4968
+   }
+  },
+  {
+   "i": 48,
+   "t_music": 74.5714,
+   "t_race": 74.5714,
+   "meter": [
+    7,
+    8
+   ],
+   "tension": 1.0,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.5172,
+    "opp": 0.5232,
+    "police": 0.4149,
+    "gap": -0.006,
+    "police_dist": 0.1023,
+    "phase": 0.5232
+   }
+  },
+  {
+   "i": 49,
+   "t_music": 76.0714,
+   "t_race": 76.0714,
+   "meter": [
+    7,
+    8
+   ],
+   "tension": 1.0,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.5172,
+    "opp": 0.5232,
+    "police": 0.4149,
+    "gap": -0.006,
+    "police_dist": 0.1023,
+    "phase": 0.5232
+   }
+  },
+  {
+   "i": 50,
+   "t_music": 77.5714,
+   "t_race": 77.5714,
+   "meter": [
+    7,
+    8
+   ],
+   "tension": 1.0,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.5365,
+    "opp": 0.5539,
+    "police": 0.4455,
+    "gap": -0.0174,
+    "police_dist": 0.091,
+    "phase": 0.5539
+   }
+  },
+  {
+   "i": 51,
+   "t_music": 79.0714,
+   "t_race": 79.0714,
+   "meter": [
+    7,
+    8
+   ],
+   "tension": 1.0,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.5365,
+    "opp": 0.5539,
+    "police": 0.4455,
+    "gap": -0.0174,
+    "police_dist": 0.091,
+    "phase": 0.5539
+   }
+  },
+  {
+   "i": 52,
+   "t_music": 80.5714,
+   "t_race": 80.5714,
+   "meter": [
+    7,
+    8
+   ],
+   "tension": 1.0,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.5541,
+    "opp": 0.5824,
+    "police": 0.4736,
+    "gap": -0.0283,
+    "police_dist": 0.0805,
+    "phase": 0.5824
+   }
+  },
+  {
+   "i": 53,
+   "t_music": 82.0714,
+   "t_race": 82.0714,
+   "meter": [
+    7,
+    8
+   ],
+   "tension": 1.0,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.5541,
+    "opp": 0.5824,
+    "police": 0.4736,
+    "gap": -0.0283,
+    "police_dist": 0.0805,
+    "phase": 0.5824
+   }
+  },
+  {
+   "i": 54,
+   "t_music": 83.5714,
+   "t_race": 83.5714,
+   "meter": [
+    7,
+    8
+   ],
+   "tension": 1.0,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.5723,
+    "opp": 0.6112,
+    "police": 0.5023,
+    "gap": -0.0389,
+    "police_dist": 0.07,
+    "phase": 0.6112
+   }
+  },
+  {
+   "i": 55,
+   "t_music": 85.0714,
+   "t_race": 85.0714,
+   "meter": [
+    7,
+    8
+   ],
+   "tension": 1.0,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.5723,
+    "opp": 0.6112,
+    "police": 0.5023,
+    "gap": -0.0389,
+    "police_dist": 0.07,
+    "phase": 0.6112
+   }
+  },
+  {
+   "i": 56,
+   "t_music": 86.5714,
+   "t_race": 86.5714,
+   "meter": [
+    7,
+    8
+   ],
+   "tension": 1.0,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.5898,
+    "opp": 0.6308,
+    "police": 0.5263,
+    "gap": -0.0411,
+    "police_dist": 0.0634,
+    "phase": 0.6308
+   }
+  },
+  {
+   "i": 57,
+   "t_music": 88.0714,
+   "t_race": 88.0714,
+   "meter": [
+    7,
+    8
+   ],
+   "tension": 1.0,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.5898,
+    "opp": 0.6308,
+    "police": 0.5263,
+    "gap": -0.0411,
+    "police_dist": 0.0634,
+    "phase": 0.6308
+   }
+  },
+  {
+   "i": 58,
+   "t_music": 89.5714,
+   "t_race": 89.5714,
+   "meter": [
+    7,
+    8
+   ],
+   "tension": 1.0,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.6082,
+    "opp": 0.6409,
+    "police": 0.5477,
+    "gap": -0.0328,
+    "police_dist": 0.0604,
+    "phase": 0.6409
+   }
+  },
+  {
+   "i": 59,
+   "t_music": 91.0714,
+   "t_race": 91.0714,
+   "meter": [
+    7,
+    8
+   ],
+   "tension": 1.0,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.6082,
+    "opp": 0.6409,
+    "police": 0.5477,
+    "gap": -0.0328,
+    "police_dist": 0.0604,
+    "phase": 0.6409
+   }
+  },
+  {
+   "i": 60,
+   "t_music": 92.5714,
+   "t_race": 92.5714,
+   "meter": [
+    7,
+    8
+   ],
+   "tension": 1.0,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.6267,
+    "opp": 0.6509,
+    "police": 0.5693,
+    "gap": -0.0242,
+    "police_dist": 0.0574,
+    "phase": 0.6509
+   }
+  },
+  {
+   "i": 61,
+   "t_music": 94.0714,
+   "t_race": 94.0714,
+   "meter": [
+    7,
+    8
+   ],
+   "tension": 1.0,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.6267,
+    "opp": 0.6509,
+    "police": 0.5693,
+    "gap": -0.0242,
+    "police_dist": 0.0574,
+    "phase": 0.6509
+   }
+  },
+  {
+   "i": 62,
+   "t_music": 95.5714,
+   "t_race": 95.5714,
+   "meter": [
+    7,
+    8
+   ],
+   "tension": 1.0,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.6444,
+    "opp": 0.6599,
+    "police": 0.5888,
+    "gap": -0.0155,
+    "police_dist": 0.0556,
+    "phase": 0.6599
+   }
+  },
+  {
+   "i": 63,
+   "t_music": 97.0714,
+   "t_race": 97.0714,
+   "meter": [
+    7,
+    8
+   ],
+   "tension": 1.0,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.6444,
+    "opp": 0.6599,
+    "police": 0.5888,
+    "gap": -0.0155,
+    "police_dist": 0.0556,
+    "phase": 0.6599
+   }
+  },
+  {
+   "i": 64,
+   "t_music": 98.5714,
+   "t_race": 98.5714,
+   "meter": [
+    7,
+    8
+   ],
+   "tension": 1.0,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.6619,
+    "opp": 0.663,
+    "police": 0.6033,
+    "gap": -0.0011,
+    "police_dist": 0.0586,
+    "phase": 0.663
+   }
+  },
+  {
+   "i": 65,
+   "t_music": 100.0714,
+   "t_race": 100.0714,
+   "meter": [
+    7,
+    8
+   ],
+   "tension": 1.0,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.6619,
+    "opp": 0.663,
+    "police": 0.6033,
+    "gap": -0.0011,
+    "police_dist": 0.0586,
+    "phase": 0.663
+   }
+  },
+  {
+   "i": 66,
+   "t_music": 101.5714,
+   "t_race": 101.5714,
+   "meter": [
+    4,
+    4
+   ],
+   "tension": 0.6,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.6791,
+    "opp": 0.6662,
+    "police": 0.6175,
+    "gap": 0.0128,
+    "police_dist": 0.0616,
+    "phase": 0.6791
+   }
+  },
+  {
+   "i": 67,
+   "t_music": 103.2857,
+   "t_race": 103.2857,
+   "meter": [
+    4,
+    4
+   ],
+   "tension": 0.6,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.6791,
+    "opp": 0.6662,
+    "police": 0.6175,
+    "gap": 0.0128,
+    "police_dist": 0.0616,
+    "phase": 0.6791
+   }
+  },
+  {
+   "i": 68,
+   "t_music": 105.0,
+   "t_race": 105.0,
+   "meter": [
+    4,
+    4
+   ],
+   "tension": 0.6,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.7,
+    "opp": 0.6701,
+    "police": 0.635,
+    "gap": 0.0299,
+    "police_dist": 0.065,
+    "phase": 0.7
+   }
+  },
+  {
+   "i": 69,
+   "t_music": 106.7143,
+   "t_race": 106.7143,
+   "meter": [
+    4,
+    4
+   ],
+   "tension": 0.6,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.7,
+    "opp": 0.6701,
+    "police": 0.635,
+    "gap": 0.0299,
+    "police_dist": 0.065,
+    "phase": 0.7
+   }
+  },
+  {
+   "i": 70,
+   "t_music": 108.4286,
+   "t_race": 108.4286,
+   "meter": [
+    4,
+    4
+   ],
+   "tension": 0.6,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.72,
+    "opp": 0.6838,
+    "police": 0.6516,
+    "gap": 0.0362,
+    "police_dist": 0.0684,
+    "phase": 0.72
+   }
+  },
+  {
+   "i": 71,
+   "t_music": 110.1429,
+   "t_race": 110.1429,
+   "meter": [
+    4,
+    4
+   ],
+   "tension": 0.6,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.72,
+    "opp": 0.6838,
+    "police": 0.6516,
+    "gap": 0.0362,
+    "police_dist": 0.0684,
+    "phase": 0.72
+   }
+  },
+  {
+   "i": 72,
+   "t_music": 111.8571,
+   "t_race": 111.8571,
+   "meter": [
+    4,
+    4
+   ],
+   "tension": 0.6,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.7408,
+    "opp": 0.6969,
+    "police": 0.6689,
+    "gap": 0.0438,
+    "police_dist": 0.0719,
+    "phase": 0.7408
+   }
+  },
+  {
+   "i": 73,
+   "t_music": 113.5714,
+   "t_race": 113.5714,
+   "meter": [
+    4,
+    4
+   ],
+   "tension": 0.6,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.7408,
+    "opp": 0.6969,
+    "police": 0.6689,
+    "gap": 0.0438,
+    "police_dist": 0.0719,
+    "phase": 0.7408
+   }
+  },
+  {
+   "i": 74,
+   "t_music": 115.2857,
+   "t_race": 115.2857,
+   "meter": [
+    4,
+    4
+   ],
+   "tension": 0.6,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.7619,
+    "opp": 0.7105,
+    "police": 0.6866,
+    "gap": 0.0513,
+    "police_dist": 0.0753,
+    "phase": 0.7619
+   }
+  },
+  {
+   "i": 75,
+   "t_music": 117.0,
+   "t_race": 117.0,
+   "meter": [
+    4,
+    4
+   ],
+   "tension": 0.6,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.7619,
+    "opp": 0.7105,
+    "police": 0.6866,
+    "gap": 0.0513,
+    "police_dist": 0.0753,
+    "phase": 0.7619
+   }
+  },
+  {
+   "i": 76,
+   "t_music": 118.7143,
+   "t_race": 118.7143,
+   "meter": [
+    4,
+    4
+   ],
+   "tension": 0.6,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.7834,
+    "opp": 0.7248,
+    "police": 0.7047,
+    "gap": 0.0587,
+    "police_dist": 0.0787,
+    "phase": 0.7834
+   }
+  },
+  {
+   "i": 77,
+   "t_music": 120.4286,
+   "t_race": 120.4286,
+   "meter": [
+    4,
+    4
+   ],
+   "tension": 0.6,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.7834,
+    "opp": 0.7248,
+    "police": 0.7047,
+    "gap": 0.0587,
+    "police_dist": 0.0787,
+    "phase": 0.7834
+   }
+  },
+  {
+   "i": 78,
+   "t_music": 122.1429,
+   "t_race": 122.1429,
+   "meter": [
+    4,
+    4
+   ],
+   "tension": 0.6,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.8015,
+    "opp": 0.7403,
+    "police": 0.7194,
+    "gap": 0.0612,
+    "police_dist": 0.0821,
+    "phase": 0.8015
+   }
+  },
+  {
+   "i": 79,
+   "t_music": 123.8571,
+   "t_race": 123.8571,
+   "meter": [
+    4,
+    4
+   ],
+   "tension": 0.6,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.8015,
+    "opp": 0.7403,
+    "police": 0.7194,
+    "gap": 0.0612,
+    "police_dist": 0.0821,
+    "phase": 0.8015
+   }
+  },
+  {
+   "i": 80,
+   "t_music": 125.5714,
+   "t_race": 125.5714,
+   "meter": [
+    4,
+    4
+   ],
+   "tension": 0.6,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.8194,
+    "opp": 0.7573,
+    "police": 0.7338,
+    "gap": 0.0621,
+    "police_dist": 0.0856,
+    "phase": 0.8194
+   }
+  },
+  {
+   "i": 81,
+   "t_music": 127.2857,
+   "t_race": 127.2857,
+   "meter": [
+    4,
+    4
+   ],
+   "tension": 0.6,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.8194,
+    "opp": 0.7573,
+    "police": 0.7338,
+    "gap": 0.0621,
+    "police_dist": 0.0856,
+    "phase": 0.8194
+   }
+  },
+  {
+   "i": 82,
+   "t_music": 129.0,
+   "t_race": 129.0,
+   "meter": [
+    4,
+    4
+   ],
+   "tension": 0.6,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.838,
+    "opp": 0.7728,
+    "police": 0.749,
+    "gap": 0.0652,
+    "police_dist": 0.089,
+    "phase": 0.838
+   }
+  },
+  {
+   "i": 83,
+   "t_music": 130.7143,
+   "t_race": 130.7143,
+   "meter": [
+    4,
+    4
+   ],
+   "tension": 0.6,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.838,
+    "opp": 0.7728,
+    "police": 0.749,
+    "gap": 0.0652,
+    "police_dist": 0.089,
+    "phase": 0.838
+   }
+  },
+  {
+   "i": 84,
+   "t_music": 132.4286,
+   "t_race": 132.4286,
+   "meter": [
+    4,
+    4
+   ],
+   "tension": 0.6,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.8572,
+    "opp": 0.7887,
+    "police": 0.7684,
+    "gap": 0.0684,
+    "police_dist": 0.0888,
+    "phase": 0.8572
+   }
+  },
+  {
+   "i": 85,
+   "t_music": 134.1429,
+   "t_race": 134.1429,
+   "meter": [
+    4,
+    4
+   ],
+   "tension": 0.6,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.8572,
+    "opp": 0.7887,
+    "police": 0.7684,
+    "gap": 0.0684,
+    "police_dist": 0.0888,
+    "phase": 0.8572
+   }
+  },
+  {
+   "i": 86,
+   "t_music": 135.8571,
+   "t_race": 135.8571,
+   "meter": [
+    4,
+    4
+   ],
+   "tension": 0.6,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.876,
+    "opp": 0.8048,
+    "police": 0.7889,
+    "gap": 0.0712,
+    "police_dist": 0.0871,
+    "phase": 0.876
+   }
+  },
+  {
+   "i": 87,
+   "t_music": 137.5714,
+   "t_race": 137.5714,
+   "meter": [
+    4,
+    4
+   ],
+   "tension": 0.6,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.876,
+    "opp": 0.8048,
+    "police": 0.7889,
+    "gap": 0.0712,
+    "police_dist": 0.0871,
+    "phase": 0.876
+   }
+  },
+  {
+   "i": 88,
+   "t_music": 139.2857,
+   "t_race": 139.2857,
+   "meter": [
+    4,
+    4
+   ],
+   "tension": 0.6,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.8949,
+    "opp": 0.8218,
+    "police": 0.8096,
+    "gap": 0.0731,
+    "police_dist": 0.0854,
+    "phase": 0.8949
+   }
+  },
+  {
+   "i": 89,
+   "t_music": 141.0,
+   "t_race": 141.0,
+   "meter": [
+    4,
+    4
+   ],
+   "tension": 0.6,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.8949,
+    "opp": 0.8218,
+    "police": 0.8096,
+    "gap": 0.0731,
+    "police_dist": 0.0854,
+    "phase": 0.8949
+   }
+  },
+  {
+   "i": 90,
+   "t_music": 142.7143,
+   "t_race": 142.7143,
+   "meter": [
+    4,
+    4
+   ],
+   "tension": 0.6,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.9107,
+    "opp": 0.837,
+    "police": 0.827,
+    "gap": 0.0737,
+    "police_dist": 0.0836,
+    "phase": 0.9107
+   }
+  },
+  {
+   "i": 91,
+   "t_music": 144.4286,
+   "t_race": 144.4286,
+   "meter": [
+    4,
+    4
+   ],
+   "tension": 0.6,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.9107,
+    "opp": 0.837,
+    "police": 0.827,
+    "gap": 0.0737,
+    "police_dist": 0.0836,
+    "phase": 0.9107
+   }
+  },
+  {
+   "i": 92,
+   "t_music": 146.1429,
+   "t_race": 146.1429,
+   "meter": [
+    4,
+    4
+   ],
+   "tension": 0.6,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.926,
+    "opp": 0.8517,
+    "police": 0.844,
+    "gap": 0.0743,
+    "police_dist": 0.0819,
+    "phase": 0.926
+   }
+  },
+  {
+   "i": 93,
+   "t_music": 147.8571,
+   "t_race": 147.8571,
+   "meter": [
+    4,
+    4
+   ],
+   "tension": 0.6,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.926,
+    "opp": 0.8517,
+    "police": 0.844,
+    "gap": 0.0743,
+    "police_dist": 0.0819,
+    "phase": 0.926
+   }
+  },
+  {
+   "i": 94,
+   "t_music": 149.5714,
+   "t_race": 149.5714,
+   "meter": [
+    4,
+    4
+   ],
+   "tension": 0.6,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.9406,
+    "opp": 0.8666,
+    "police": 0.8604,
+    "gap": 0.074,
+    "police_dist": 0.0802,
+    "phase": 0.9406
+   }
+  },
+  {
+   "i": 95,
+   "t_music": 151.2857,
+   "t_race": 151.2857,
+   "meter": [
+    4,
+    4
+   ],
+   "tension": 0.6,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.9406,
+    "opp": 0.8666,
+    "police": 0.8604,
+    "gap": 0.074,
+    "police_dist": 0.0802,
+    "phase": 0.9406
+   }
+  },
+  {
+   "i": 96,
+   "t_music": 153.0,
+   "t_race": 153.0,
+   "meter": [
+    4,
+    4
+   ],
+   "tension": 0.6,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.9557,
+    "opp": 0.8803,
+    "police": 0.8797,
+    "gap": 0.0754,
+    "police_dist": 0.076,
+    "phase": 0.9557
+   }
+  },
+  {
+   "i": 97,
+   "t_music": 154.7143,
+   "t_race": 154.7143,
+   "meter": [
+    4,
+    4
+   ],
+   "tension": 0.6,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.9557,
+    "opp": 0.8803,
+    "police": 0.8797,
+    "gap": 0.0754,
+    "police_dist": 0.076,
+    "phase": 0.9557
+   }
+  },
+  {
+   "i": 98,
+   "t_music": 156.4286,
+   "t_race": 156.4286,
+   "meter": [
+    4,
+    4
+   ],
+   "tension": 0.6,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.9691,
+    "opp": 0.8922,
+    "police": 0.8977,
+    "gap": 0.0769,
+    "police_dist": 0.0714,
+    "phase": 0.9691
+   }
+  },
+  {
+   "i": 99,
+   "t_music": 158.1429,
+   "t_race": 158.1429,
+   "meter": [
+    4,
+    4
+   ],
+   "tension": 0.6,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.9691,
+    "opp": 0.8922,
+    "police": 0.8977,
+    "gap": 0.0769,
+    "police_dist": 0.0714,
+    "phase": 0.9691
+   }
+  },
+  {
+   "i": 100,
+   "t_music": 159.8571,
+   "t_race": 159.8571,
+   "meter": [
+    4,
+    4
+   ],
+   "tension": 0.6,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.9776,
+    "opp": 0.9012,
+    "police": 0.9107,
+    "gap": 0.0764,
+    "police_dist": 0.0669,
+    "phase": 0.9776
+   }
+  },
+  {
+   "i": 101,
+   "t_music": 161.5714,
+   "t_race": 161.5714,
+   "meter": [
+    4,
+    4
+   ],
+   "tension": 0.6,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.9776,
+    "opp": 0.9012,
+    "police": 0.9107,
+    "gap": 0.0764,
+    "police_dist": 0.0669,
+    "phase": 0.9776
+   }
+  },
+  {
+   "i": 102,
+   "t_music": 163.2857,
+   "t_race": 163.2857,
+   "meter": [
+    4,
+    4
+   ],
+   "tension": 0.6,
+   "layers": {
+    "drums": true,
+    "bass": false,
+    "pad": false,
+    "lead": true
+   },
+   "state": {
+    "you": 0.9863,
+    "opp": 0.9106,
+    "police": 0.924,
+    "gap": 0.0757,
+    "police_dist": 0.0623,
+    "phase": 0.9863
+   }
+  }
+ ]
+}

@@ -19,7 +19,7 @@ from .race import RaceRecording
 
 try:
     from .markov import MarkovChain
-except Exception:  # pragma: no cover - markov.py should always import
+except ImportError:  # pragma: no cover - markov.py should always import
     MarkovChain = None
 
 
@@ -170,7 +170,7 @@ def generate(
 
     write_midi(midi_path, bars, bpm, cfg["stems"])
 
-    sync = {"format": "gm-sync/1", "bpm": int(round(bpm)), "bars": trace}
+    sync = {"format": "gm-sync/1", "bpm": round(bpm), "bars": trace}
     sync_path.write_text(json.dumps(sync, indent=1) + "\n")
 
     odd_bars = sum(1 for b in trace if b["meter"] == [7, 8])

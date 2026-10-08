@@ -113,8 +113,10 @@ declared here, with links to the conversations.
 > validation and statistics scripts, docs) and the *interface stubs* in
 > `engine/hooks.py` and `engine/markov.py`. The Markov method itself
 > (transition counting, smoothing, sampling) and the state/decision logic
-> (`conditions`, `bar_context`) were implemented by the student. The abstract
-> and paper text were written by the student.
+> (`conditions`, `bar_context`) were implemented by the student; at the
+> student's request, AI also fixed syntax/runtime errors in those two files
+> (dict-literal keys, a missing return, a wrong state key) without changing
+> the logic. The abstract and paper text were written by the student.
 
 ## Web visualizer (optional)
 

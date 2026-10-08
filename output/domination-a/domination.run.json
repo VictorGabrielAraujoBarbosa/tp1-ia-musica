@@ -1,0 +1,52 @@
+{
+ "format": "gm-engine-run/1",
+ "race": "domination",
+ "name": "domination",
+ "config": {
+  "format": "gm-engine-config/1",
+  "bpm": 140,
+  "order": 2,
+  "seed": 5,
+  "temperature": 1.15,
+  "sample_every_bars": 4,
+  "hooks": "engine.hooks",
+  "stems": {
+   "drums": {
+    "channel": 9,
+    "drum": true,
+    "velocity": 100,
+    "drum_duration_steps": 0.5
+   },
+   "lead": {
+    "channel": 0,
+    "program": 81,
+    "velocity": 80
+   }
+  },
+  "track_stems": {
+   "TripleOscillator": "lead",
+   "GeneralUser-GS": "drums"
+  }
+ },
+ "outputs": {
+  "midi": "domination.mid",
+  "sync": "domination.sync.json"
+ },
+ "metrics": {
+  "bars": 88,
+  "music_s": 150.86,
+  "odd_share": 0.0,
+  "stem_on_bars": {
+   "drums": 88,
+   "lead": 48
+  },
+  "tension_mean": 0.464,
+  "tension_max": 0.6,
+  "trained_steps": {
+   "drums/even": 32,
+   "drums/odd": 27,
+   "lead/even": 61,
+   "lead/odd": 25
+  }
+ }
+}

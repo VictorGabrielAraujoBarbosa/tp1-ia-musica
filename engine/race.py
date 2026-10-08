@@ -38,7 +38,7 @@ class RaceRecording:
         self.samples: list[dict] = data["samples"]
 
     @classmethod
-    def load(cls, path: str | Path) -> "RaceRecording":
+    def load(cls, path: str | Path) -> RaceRecording:
         return cls(json.loads(Path(path).read_text()))
 
     @property

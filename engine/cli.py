@@ -64,8 +64,15 @@ def main(argv: list[str] | None = None) -> int:
         return 2
 
     m = result["metrics"]
-    print(f"wrote {result['midi'].relative_to(ROOT)}")
-    print(f"wrote {result['sync'].relative_to(ROOT)}")
+
+    def rel(path):
+        try:
+            return str(path.relative_to(ROOT))
+        except ValueError:
+            return str(path)
+
+    print(f"wrote {rel(result['midi'])}")
+    print(f"wrote {rel(result['sync'])}")
     print(f"  {m['bars']} bars, {m['music_s']}s, odd meter {m['odd_share']:.0%}, "
           f"tension mean {m['tension_mean']} max {m['tension_max']}")
     return 0

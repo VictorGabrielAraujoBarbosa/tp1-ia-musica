@@ -25,7 +25,7 @@ TAIL_S = 2.5  # keep this much after the last MIDI event (reverb tail)
 
 
 def render(mid: str | Path, out: str | Path, soundfont: str | Path,
-           sr: int = 44100) -> Path:
+           sr: int = 44100, gain: float = 1.0) -> Path:
     mid, out, soundfont = Path(mid), Path(out), Path(soundfont)
     fluidsynth = shutil.which("fluidsynth")
     if not fluidsynth:
@@ -43,7 +43,8 @@ def render(mid: str | Path, out: str | Path, soundfont: str | Path,
     with tempfile.TemporaryDirectory(dir=tmpdir, prefix="render-") as td:
         wav = Path(td) / "render.wav"
         subprocess.run(
-            [fluidsynth, "-ni", "-F", str(wav), "-r", str(sr), str(soundfont), str(mid)],
+            [fluidsynth, "-ni", "-g", str(gain), "-F", str(wav), "-r", str(sr),
+             str(soundfont), str(mid)],
             check=True, capture_output=True,
         )
         ffmpeg = shutil.which("ffmpeg")
@@ -68,11 +69,13 @@ def main() -> int:
     ap.add_argument("--out", required=True, type=Path)
     ap.add_argument("--soundfont", type=Path, default=ROOT / "soundfonts" / "GeneralUser-GS.sf2")
     ap.add_argument("--sr", type=int, default=44100)
+    ap.add_argument("--gain", type=float, default=1.0,
+                    help="FluidSynth synth gain (default 1.0; its own default 0.2 is very quiet)")
     args = ap.parse_args()
     if not args.mid.exists():
         print(f"input not found: {args.mid}", file=sys.stderr)
         return 1
-    out = render(args.mid, args.out, args.soundfont, args.sr)
+    out = render(args.mid, args.out, args.soundfont, args.sr, args.gain)
     print(f"wrote {out} ({out.stat().st_size / 1024:.0f} KiB)")
     return 0
 
