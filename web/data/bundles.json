@@ -1,0 +1,23 @@
+{
+ "format": "gm-bundles/1",
+ "bundles": [
+  {
+   "id": "comeback",
+   "name": "Comeback",
+   "description": "Early lead, overtaken, police chase, fight back and win.",
+   "race": "data/comeback.json",
+   "sync": "data/comeback.sync.json",
+   "audio": "audio/comeback.ogg",
+   "placeholder": true
+  },
+  {
+   "id": "domination",
+   "name": "Domination",
+   "description": "Lights-to-flag lead, no police. Control case for reactivity.",
+   "race": "data/domination.json",
+   "sync": "data/domination.sync.json",
+   "audio": "audio/domination.ogg",
+   "placeholder": true
+  }
+ ]
+}

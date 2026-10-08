@@ -1,0 +1,926 @@
+{
+ "format": "gm-race/1",
+ "name": "domination",
+ "title": "Domination",
+ "description": "Lights-to-flag lead, no police. Control case for reactivity.",
+ "sample_hz": 1,
+ "duration_s": 150,
+ "events": [
+  {
+   "t": 136,
+   "type": "final_lap"
+  },
+  {
+   "t": 150,
+   "type": "finish"
+  }
+ ],
+ "samples": [
+  {
+   "t": 0,
+   "you": 0.0006,
+   "opp": 0.0,
+   "police": null
+  },
+  {
+   "t": 1,
+   "you": 0.0093,
+   "opp": 0.0,
+   "police": null
+  },
+  {
+   "t": 2,
+   "you": 0.0179,
+   "opp": 0.0,
+   "police": null
+  },
+  {
+   "t": 3,
+   "you": 0.0261,
+   "opp": 0.0023,
+   "police": null
+  },
+  {
+   "t": 4,
+   "you": 0.0346,
+   "opp": 0.0085,
+   "police": null
+  },
+  {
+   "t": 5,
+   "you": 0.0428,
+   "opp": 0.0146,
+   "police": null
+  },
+  {
+   "t": 6,
+   "you": 0.051,
+   "opp": 0.0207,
+   "police": null
+  },
+  {
+   "t": 7,
+   "you": 0.0596,
+   "opp": 0.0267,
+   "police": null
+  },
+  {
+   "t": 8,
+   "you": 0.0684,
+   "opp": 0.0329,
+   "police": null
+  },
+  {
+   "t": 9,
+   "you": 0.0765,
+   "opp": 0.0388,
+   "police": null
+  },
+  {
+   "t": 10,
+   "you": 0.085,
+   "opp": 0.0449,
+   "police": null
+  },
+  {
+   "t": 11,
+   "you": 0.0938,
+   "opp": 0.0506,
+   "police": null
+  },
+  {
+   "t": 12,
+   "you": 0.1028,
+   "opp": 0.0561,
+   "police": null
+  },
+  {
+   "t": 13,
+   "you": 0.1113,
+   "opp": 0.0616,
+   "police": null
+  },
+  {
+   "t": 14,
+   "you": 0.1196,
+   "opp": 0.0677,
+   "police": null
+  },
+  {
+   "t": 15,
+   "you": 0.1279,
+   "opp": 0.0733,
+   "police": null
+  },
+  {
+   "t": 16,
+   "you": 0.1363,
+   "opp": 0.079,
+   "police": null
+  },
+  {
+   "t": 17,
+   "you": 0.1444,
+   "opp": 0.0848,
+   "police": null
+  },
+  {
+   "t": 18,
+   "you": 0.153,
+   "opp": 0.0904,
+   "police": null
+  },
+  {
+   "t": 19,
+   "you": 0.1611,
+   "opp": 0.0962,
+   "police": null
+  },
+  {
+   "t": 20,
+   "you": 0.1691,
+   "opp": 0.1018,
+   "police": null
+  },
+  {
+   "t": 21,
+   "you": 0.1766,
+   "opp": 0.1067,
+   "police": null
+  },
+  {
+   "t": 22,
+   "you": 0.1842,
+   "opp": 0.1116,
+   "police": null
+  },
+  {
+   "t": 23,
+   "you": 0.1919,
+   "opp": 0.1164,
+   "police": null
+  },
+  {
+   "t": 24,
+   "you": 0.1995,
+   "opp": 0.1215,
+   "police": null
+  },
+  {
+   "t": 25,
+   "you": 0.207,
+   "opp": 0.1268,
+   "police": null
+  },
+  {
+   "t": 26,
+   "you": 0.2149,
+   "opp": 0.1321,
+   "police": null
+  },
+  {
+   "t": 27,
+   "you": 0.2222,
+   "opp": 0.1375,
+   "police": null
+  },
+  {
+   "t": 28,
+   "you": 0.23,
+   "opp": 0.1427,
+   "police": null
+  },
+  {
+   "t": 29,
+   "you": 0.2381,
+   "opp": 0.148,
+   "police": null
+  },
+  {
+   "t": 30,
+   "you": 0.2455,
+   "opp": 0.1538,
+   "police": null
+  },
+  {
+   "t": 31,
+   "you": 0.2528,
+   "opp": 0.1596,
+   "police": null
+  },
+  {
+   "t": 32,
+   "you": 0.2607,
+   "opp": 0.1652,
+   "police": null
+  },
+  {
+   "t": 33,
+   "you": 0.2688,
+   "opp": 0.1706,
+   "police": null
+  },
+  {
+   "t": 34,
+   "you": 0.2771,
+   "opp": 0.1758,
+   "police": null
+  },
+  {
+   "t": 35,
+   "you": 0.2852,
+   "opp": 0.1812,
+   "police": null
+  },
+  {
+   "t": 36,
+   "you": 0.2933,
+   "opp": 0.1863,
+   "police": null
+  },
+  {
+   "t": 37,
+   "you": 0.3012,
+   "opp": 0.1914,
+   "police": null
+  },
+  {
+   "t": 38,
+   "you": 0.3082,
+   "opp": 0.1969,
+   "police": null
+  },
+  {
+   "t": 39,
+   "you": 0.3161,
+   "opp": 0.2017,
+   "police": null
+  },
+  {
+   "t": 40,
+   "you": 0.3244,
+   "opp": 0.2063,
+   "police": null
+  },
+  {
+   "t": 41,
+   "you": 0.3313,
+   "opp": 0.2117,
+   "police": null
+  },
+  {
+   "t": 42,
+   "you": 0.3389,
+   "opp": 0.2169,
+   "police": null
+  },
+  {
+   "t": 43,
+   "you": 0.3465,
+   "opp": 0.2222,
+   "police": null
+  },
+  {
+   "t": 44,
+   "you": 0.3537,
+   "opp": 0.2277,
+   "police": null
+  },
+  {
+   "t": 45,
+   "you": 0.3611,
+   "opp": 0.2333,
+   "police": null
+  },
+  {
+   "t": 46,
+   "you": 0.3675,
+   "opp": 0.2375,
+   "police": null
+  },
+  {
+   "t": 47,
+   "you": 0.3746,
+   "opp": 0.2422,
+   "police": null
+  },
+  {
+   "t": 48,
+   "you": 0.3809,
+   "opp": 0.2466,
+   "police": null
+  },
+  {
+   "t": 49,
+   "you": 0.3874,
+   "opp": 0.2509,
+   "police": null
+  },
+  {
+   "t": 50,
+   "you": 0.3943,
+   "opp": 0.2552,
+   "police": null
+  },
+  {
+   "t": 51,
+   "you": 0.4011,
+   "opp": 0.2593,
+   "police": null
+  },
+  {
+   "t": 52,
+   "you": 0.4079,
+   "opp": 0.2635,
+   "police": null
+  },
+  {
+   "t": 53,
+   "you": 0.4146,
+   "opp": 0.2678,
+   "police": null
+  },
+  {
+   "t": 54,
+   "you": 0.4213,
+   "opp": 0.2722,
+   "police": null
+  },
+  {
+   "t": 55,
+   "you": 0.4283,
+   "opp": 0.2763,
+   "police": null
+  },
+  {
+   "t": 56,
+   "you": 0.4348,
+   "opp": 0.2803,
+   "police": null
+  },
+  {
+   "t": 57,
+   "you": 0.4414,
+   "opp": 0.2847,
+   "police": null
+  },
+  {
+   "t": 58,
+   "you": 0.4476,
+   "opp": 0.2893,
+   "police": null
+  },
+  {
+   "t": 59,
+   "you": 0.4542,
+   "opp": 0.2933,
+   "police": null
+  },
+  {
+   "t": 60,
+   "you": 0.4607,
+   "opp": 0.298,
+   "police": null
+  },
+  {
+   "t": 61,
+   "you": 0.4667,
+   "opp": 0.3022,
+   "police": null
+  },
+  {
+   "t": 62,
+   "you": 0.4738,
+   "opp": 0.3061,
+   "police": null
+  },
+  {
+   "t": 63,
+   "you": 0.4802,
+   "opp": 0.3103,
+   "police": null
+  },
+  {
+   "t": 64,
+   "you": 0.4869,
+   "opp": 0.3152,
+   "police": null
+  },
+  {
+   "t": 65,
+   "you": 0.4932,
+   "opp": 0.3193,
+   "police": null
+  },
+  {
+   "t": 66,
+   "you": 0.5002,
+   "opp": 0.3239,
+   "police": null
+  },
+  {
+   "t": 67,
+   "you": 0.5073,
+   "opp": 0.328,
+   "police": null
+  },
+  {
+   "t": 68,
+   "you": 0.5142,
+   "opp": 0.3326,
+   "police": null
+  },
+  {
+   "t": 69,
+   "you": 0.5207,
+   "opp": 0.3368,
+   "police": null
+  },
+  {
+   "t": 70,
+   "you": 0.5278,
+   "opp": 0.3414,
+   "police": null
+  },
+  {
+   "t": 71,
+   "you": 0.5341,
+   "opp": 0.346,
+   "police": null
+  },
+  {
+   "t": 72,
+   "you": 0.5409,
+   "opp": 0.3504,
+   "police": null
+  },
+  {
+   "t": 73,
+   "you": 0.5469,
+   "opp": 0.3541,
+   "police": null
+  },
+  {
+   "t": 74,
+   "you": 0.5537,
+   "opp": 0.3585,
+   "police": null
+  },
+  {
+   "t": 75,
+   "you": 0.5604,
+   "opp": 0.3624,
+   "police": null
+  },
+  {
+   "t": 76,
+   "you": 0.5663,
+   "opp": 0.3665,
+   "police": null
+  },
+  {
+   "t": 77,
+   "you": 0.5719,
+   "opp": 0.3702,
+   "police": null
+  },
+  {
+   "t": 78,
+   "you": 0.5782,
+   "opp": 0.3743,
+   "police": null
+  },
+  {
+   "t": 79,
+   "you": 0.5843,
+   "opp": 0.3781,
+   "police": null
+  },
+  {
+   "t": 80,
+   "you": 0.5905,
+   "opp": 0.3813,
+   "police": null
+  },
+  {
+   "t": 81,
+   "you": 0.5964,
+   "opp": 0.3851,
+   "police": null
+  },
+  {
+   "t": 82,
+   "you": 0.6029,
+   "opp": 0.3892,
+   "police": null
+  },
+  {
+   "t": 83,
+   "you": 0.6085,
+   "opp": 0.3933,
+   "police": null
+  },
+  {
+   "t": 84,
+   "you": 0.6143,
+   "opp": 0.3972,
+   "police": null
+  },
+  {
+   "t": 85,
+   "you": 0.62,
+   "opp": 0.4006,
+   "police": null
+  },
+  {
+   "t": 86,
+   "you": 0.6261,
+   "opp": 0.4051,
+   "police": null
+  },
+  {
+   "t": 87,
+   "you": 0.6321,
+   "opp": 0.4097,
+   "police": null
+  },
+  {
+   "t": 88,
+   "you": 0.6376,
+   "opp": 0.414,
+   "police": null
+  },
+  {
+   "t": 89,
+   "you": 0.6432,
+   "opp": 0.419,
+   "police": null
+  },
+  {
+   "t": 90,
+   "you": 0.6498,
+   "opp": 0.4236,
+   "police": null
+  },
+  {
+   "t": 91,
+   "you": 0.6554,
+   "opp": 0.4284,
+   "police": null
+  },
+  {
+   "t": 92,
+   "you": 0.6615,
+   "opp": 0.4331,
+   "police": null
+  },
+  {
+   "t": 93,
+   "you": 0.6677,
+   "opp": 0.4381,
+   "police": null
+  },
+  {
+   "t": 94,
+   "you": 0.6739,
+   "opp": 0.443,
+   "police": null
+  },
+  {
+   "t": 95,
+   "you": 0.6803,
+   "opp": 0.4476,
+   "police": null
+  },
+  {
+   "t": 96,
+   "you": 0.6855,
+   "opp": 0.4519,
+   "police": null
+  },
+  {
+   "t": 97,
+   "you": 0.6918,
+   "opp": 0.4567,
+   "police": null
+  },
+  {
+   "t": 98,
+   "you": 0.6975,
+   "opp": 0.4612,
+   "police": null
+  },
+  {
+   "t": 99,
+   "you": 0.7033,
+   "opp": 0.4658,
+   "police": null
+  },
+  {
+   "t": 100,
+   "you": 0.7092,
+   "opp": 0.4703,
+   "police": null
+  },
+  {
+   "t": 101,
+   "you": 0.7158,
+   "opp": 0.475,
+   "police": null
+  },
+  {
+   "t": 102,
+   "you": 0.7211,
+   "opp": 0.4795,
+   "police": null
+  },
+  {
+   "t": 103,
+   "you": 0.7273,
+   "opp": 0.4841,
+   "police": null
+  },
+  {
+   "t": 104,
+   "you": 0.7327,
+   "opp": 0.4887,
+   "police": null
+  },
+  {
+   "t": 105,
+   "you": 0.7389,
+   "opp": 0.4934,
+   "police": null
+  },
+  {
+   "t": 106,
+   "you": 0.7445,
+   "opp": 0.4976,
+   "police": null
+  },
+  {
+   "t": 107,
+   "you": 0.7497,
+   "opp": 0.5014,
+   "police": null
+  },
+  {
+   "t": 108,
+   "you": 0.7545,
+   "opp": 0.5053,
+   "police": null
+  },
+  {
+   "t": 109,
+   "you": 0.7602,
+   "opp": 0.5087,
+   "police": null
+  },
+  {
+   "t": 110,
+   "you": 0.7649,
+   "opp": 0.512,
+   "police": null
+  },
+  {
+   "t": 111,
+   "you": 0.7701,
+   "opp": 0.5161,
+   "police": null
+  },
+  {
+   "t": 112,
+   "you": 0.7755,
+   "opp": 0.5201,
+   "police": null
+  },
+  {
+   "t": 113,
+   "you": 0.7809,
+   "opp": 0.5243,
+   "police": null
+  },
+  {
+   "t": 114,
+   "you": 0.7859,
+   "opp": 0.528,
+   "police": null
+  },
+  {
+   "t": 115,
+   "you": 0.7907,
+   "opp": 0.5314,
+   "police": null
+  },
+  {
+   "t": 116,
+   "you": 0.7963,
+   "opp": 0.5372,
+   "police": null
+  },
+  {
+   "t": 117,
+   "you": 0.802,
+   "opp": 0.5431,
+   "police": null
+  },
+  {
+   "t": 118,
+   "you": 0.8066,
+   "opp": 0.5492,
+   "police": null
+  },
+  {
+   "t": 119,
+   "you": 0.8118,
+   "opp": 0.5551,
+   "police": null
+  },
+  {
+   "t": 120,
+   "you": 0.817,
+   "opp": 0.5606,
+   "police": null
+  },
+  {
+   "t": 121,
+   "you": 0.8217,
+   "opp": 0.5657,
+   "police": null
+  },
+  {
+   "t": 122,
+   "you": 0.8275,
+   "opp": 0.5713,
+   "police": null
+  },
+  {
+   "t": 123,
+   "you": 0.8333,
+   "opp": 0.5776,
+   "police": null
+  },
+  {
+   "t": 124,
+   "you": 0.839,
+   "opp": 0.5836,
+   "police": null
+  },
+  {
+   "t": 125,
+   "you": 0.8443,
+   "opp": 0.5892,
+   "police": null
+  },
+  {
+   "t": 126,
+   "you": 0.8496,
+   "opp": 0.5948,
+   "police": null
+  },
+  {
+   "t": 127,
+   "you": 0.8553,
+   "opp": 0.6005,
+   "police": null
+  },
+  {
+   "t": 128,
+   "you": 0.8607,
+   "opp": 0.6061,
+   "police": null
+  },
+  {
+   "t": 129,
+   "you": 0.866,
+   "opp": 0.612,
+   "police": null
+  },
+  {
+   "t": 130,
+   "you": 0.8714,
+   "opp": 0.618,
+   "police": null
+  },
+  {
+   "t": 131,
+   "you": 0.8765,
+   "opp": 0.6241,
+   "police": null
+  },
+  {
+   "t": 132,
+   "you": 0.8814,
+   "opp": 0.6297,
+   "police": null
+  },
+  {
+   "t": 133,
+   "you": 0.8865,
+   "opp": 0.6359,
+   "police": null
+  },
+  {
+   "t": 134,
+   "you": 0.8921,
+   "opp": 0.6423,
+   "police": null
+  },
+  {
+   "t": 135,
+   "you": 0.897,
+   "opp": 0.6484,
+   "police": null
+  },
+  {
+   "t": 136,
+   "you": 0.9024,
+   "opp": 0.6541,
+   "police": null
+  },
+  {
+   "t": 137,
+   "you": 0.9078,
+   "opp": 0.6604,
+   "police": null
+  },
+  {
+   "t": 138,
+   "you": 0.9136,
+   "opp": 0.666,
+   "police": null
+  },
+  {
+   "t": 139,
+   "you": 0.9186,
+   "opp": 0.6723,
+   "police": null
+  },
+  {
+   "t": 140,
+   "you": 0.9247,
+   "opp": 0.6786,
+   "police": null
+  },
+  {
+   "t": 141,
+   "you": 0.9303,
+   "opp": 0.6846,
+   "police": null
+  },
+  {
+   "t": 142,
+   "you": 0.936,
+   "opp": 0.6904,
+   "police": null
+  },
+  {
+   "t": 143,
+   "you": 0.9411,
+   "opp": 0.6964,
+   "police": null
+  },
+  {
+   "t": 144,
+   "you": 0.9465,
+   "opp": 0.7024,
+   "police": null
+  },
+  {
+   "t": 145,
+   "you": 0.9519,
+   "opp": 0.709,
+   "police": null
+  },
+  {
+   "t": 146,
+   "you": 0.9572,
+   "opp": 0.7155,
+   "police": null
+  },
+  {
+   "t": 147,
+   "you": 0.9626,
+   "opp": 0.722,
+   "police": null
+  },
+  {
+   "t": 148,
+   "you": 0.9684,
+   "opp": 0.7282,
+   "police": null
+  },
+  {
+   "t": 149,
+   "you": 0.9732,
+   "opp": 0.7341,
+   "police": null
+  },
+  {
+   "t": 150,
+   "you": 0.9788,
+   "opp": 0.7407,
+   "police": null
+  }
+ ]
+}
