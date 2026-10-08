@@ -2,6 +2,33 @@
  "format": "gm-bundles/1",
  "bundles": [
   {
+   "id": "comeback-a",
+   "name": "Comeback A",
+   "description": "Early lead, overtaken, police chase, fight back and win. (order 1, seed 11, latch 1 bar(s))",
+   "race": "data/comeback.json",
+   "sync": "data/comeback-a.sync.json",
+   "audio": "audio/comeback-a.ogg",
+   "placeholder": false
+  },
+  {
+   "id": "comeback-b",
+   "name": "Comeback B",
+   "description": "Early lead, overtaken, police chase, fight back and win. (order 2, seed 23, latch 2 bar(s))",
+   "race": "data/comeback.json",
+   "sync": "data/comeback-b.sync.json",
+   "audio": "audio/comeback-b.ogg",
+   "placeholder": false
+  },
+  {
+   "id": "domination-a",
+   "name": "Domination A",
+   "description": "Lights-to-flag lead, no police. Control case for reactivity. (order 2, seed 5, latch 4 bar(s))",
+   "race": "data/domination.json",
+   "sync": "data/domination-a.sync.json",
+   "audio": "audio/domination-a.ogg",
+   "placeholder": false
+  },
+  {
    "id": "comeback",
    "name": "Comeback",
    "description": "Early lead, overtaken, police chase, fight back and win.",

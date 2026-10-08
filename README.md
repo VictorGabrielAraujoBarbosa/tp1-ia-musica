@@ -120,9 +120,17 @@ declared here, with links to the conversations.
 
 ## Web visualizer (optional)
 
+The page is bundle-driven: each entry in `web/data/bundles.json` pairs a race
+recording with its trace log and audio, so no page changes are needed per
+piece. `bash tools/run_all.sh` publishes generated pieces automatically (via
+`tools/install_bundle.py`, which copies trace + audio into `web/` and sets
+`placeholder: false`). To view:
+
 ```bash
 cd web && python3 -m http.server 8000   # open http://localhost:8000
 ```
 
-It plays `web/data/bundles.json`; see `docs/contracts.md` for the swap
-procedure to point it at engine output.
+"Comeback A/B" show the two generated takes against the comeback race;
+"Domination A" is the control case. The original stand-in bundles remain at
+the bottom of the picker for comparison. See `docs/contracts.md` for the
+underlying schemas.
