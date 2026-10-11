@@ -43,10 +43,10 @@
   "tension_mean": 0.613,
   "tension_max": 1.0,
   "trained_steps": {
-   "drums/even": 32,
-   "drums/odd": 27,
+   "drums/even": 64,
+   "drums/odd": 125,
    "lead/even": 61,
-   "lead/odd": 25
+   "lead/odd": 55
   }
  }
 }

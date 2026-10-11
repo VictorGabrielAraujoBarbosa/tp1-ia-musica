@@ -7,8 +7,8 @@
   "bpm": 140,
   "order": 2,
   "seed": 23,
-  "temperature": 1.0,
-  "sample_every_bars": 2,
+  "temperature": 0.9,
+  "sample_every_bars": 1,
   "hooks": "engine.hooks",
   "stems": {
    "drums": {
@@ -34,19 +34,19 @@
  },
  "metrics": {
   "bars": 103,
-  "music_s": 165.0,
-  "odd_share": 0.524,
+  "music_s": 165.43,
+  "odd_share": 0.505,
   "stem_on_bars": {
-   "drums": 85,
+   "drums": 84,
    "lead": 91
   },
-  "tension_mean": 0.617,
+  "tension_mean": 0.613,
   "tension_max": 1.0,
   "trained_steps": {
-   "drums/even": 32,
-   "drums/odd": 27,
+   "drums/even": 64,
+   "drums/odd": 125,
    "lead/even": 61,
-   "lead/odd": 25
+   "lead/odd": 55
   }
  }
 }

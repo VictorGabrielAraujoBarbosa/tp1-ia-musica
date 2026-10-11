@@ -11,12 +11,30 @@
    "placeholder": false
   },
   {
+   "id": "comeback-a2",
+   "name": "Comeback A2",
+   "description": "Early lead, overtaken, police chase, fight back and win. (order 1, seed 12, latch 1 bar(s))",
+   "race": "data/comeback.json",
+   "sync": "data/comeback-a2.sync.json",
+   "audio": "audio/comeback-a2.ogg",
+   "placeholder": false
+  },
+  {
    "id": "comeback-b",
    "name": "Comeback B",
-   "description": "Early lead, overtaken, police chase, fight back and win. (order 2, seed 23, latch 2 bar(s))",
+   "description": "Early lead, overtaken, police chase, fight back and win. (order 2, seed 23, latch 1 bar(s))",
    "race": "data/comeback.json",
    "sync": "data/comeback-b.sync.json",
    "audio": "audio/comeback-b.ogg",
+   "placeholder": false
+  },
+  {
+   "id": "comeback-c",
+   "name": "Comeback C",
+   "description": "Early lead, overtaken, police chase, fight back and win. (order 3, seed 31, latch 1 bar(s))",
+   "race": "data/comeback.json",
+   "sync": "data/comeback-c.sync.json",
+   "audio": "audio/comeback-c.ogg",
    "placeholder": false
   },
   {

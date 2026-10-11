@@ -27,6 +27,8 @@ tools/smoke_test.py      end-to-end test with fixture doubles
 tools/render_audio.py    .mid -> .ogg (FluidSynth + ffmpeg)
 tools/validate.py        contract checks for all three JSON schemas
 tools/stats.py           report tables from trace logs
+tools/memorization.py    verbatim-copy analysis (order trade-off evidence)
+tools/compare_pieces.py  step agreement between two pieces (same-config check)
 tools/run_all.sh         reproduce every piece from scratch
 configs/base.json        engine + instrument + track mapping
 configs/pieces/*.json    per-piece hyperparameters (seed/order/temperature/latch)
@@ -69,8 +71,17 @@ Pieces and their hyperparameter variation:
 | piece | race | order | seed | temperature | sample every |
 |---|---|---|---|---|---|
 | `comeback-a` | comeback | 1 | 11 | 0.9 | 1 bar |
-| `comeback-b` | comeback | 2 | 23 | 1.0 | 2 bars |
+| `comeback-a2` | comeback | 1 | 12 | 0.9 | 1 bar |
+| `comeback-b` | comeback | 2 | 23 | 0.9 | 1 bar |
+| `comeback-c` | comeback | 3 | 31 | 0.9 | 1 bar |
 | `domination-a` | domination | 2 | 5 | 1.15 | 4 bars |
+
+`comeback-a`/`a2` share one configuration and differ only in the seed;
+`a → b → c` is the order ladder (1/2/3) with everything else fixed;
+`domination-a` varies the latch interval and temperature instead.
+`bash tools/run_all.sh` also writes `output/report-stats.md`,
+`output/report-memorization.md` and `output/report-same-config.md` with the
+tables used in the report.
 
 `sample_every_bars` is how often the race recording is re-sampled; bar length
 follows the current meter (4/4 = 16 sixteenths, 7/8 = 14).

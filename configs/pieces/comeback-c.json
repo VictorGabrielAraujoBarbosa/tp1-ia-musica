@@ -1,0 +1,6 @@
+{
+ "seed": 31,
+ "order": 3,
+ "temperature": 0.9,
+ "sample_every_bars": 1
+}

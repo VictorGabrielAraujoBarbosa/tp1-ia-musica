@@ -19,8 +19,14 @@ run_piece() {
 }
 
 run_piece comeback-a comeback "Comeback A"
+run_piece comeback-a2 comeback "Comeback A2"
 run_piece comeback-b comeback "Comeback B"
+run_piece comeback-c comeback "Comeback C"
 run_piece domination-a domination "Domination A"
 
 echo
-$PY tools/stats.py output/[!_]*/*.sync.json
+$PY tools/stats.py output/[!_]*/*.sync.json | tee output/report-stats.md
+echo
+$PY tools/memorization.py output/[!_]*/ | tee output/report-memorization.md
+echo
+$PY tools/compare_pieces.py output/comeback-a output/comeback-a2 | tee output/report-same-config.md

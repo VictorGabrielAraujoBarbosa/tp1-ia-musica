@@ -1,0 +1,52 @@
+{
+ "format": "gm-engine-run/1",
+ "race": "comeback",
+ "name": "comeback",
+ "config": {
+  "format": "gm-engine-config/1",
+  "bpm": 140,
+  "order": 1,
+  "seed": 12,
+  "temperature": 0.9,
+  "sample_every_bars": 1,
+  "hooks": "engine.hooks",
+  "stems": {
+   "drums": {
+    "channel": 9,
+    "drum": true,
+    "velocity": 100,
+    "drum_duration_steps": 0.5
+   },
+   "lead": {
+    "channel": 0,
+    "program": 81,
+    "velocity": 80
+   }
+  },
+  "track_stems": {
+   "TripleOscillator": "lead",
+   "GeneralUser-GS": "drums"
+  }
+ },
+ "outputs": {
+  "midi": "comeback.mid",
+  "sync": "comeback.sync.json"
+ },
+ "metrics": {
+  "bars": 103,
+  "music_s": 165.43,
+  "odd_share": 0.505,
+  "stem_on_bars": {
+   "drums": 84,
+   "lead": 91
+  },
+  "tension_mean": 0.613,
+  "tension_max": 1.0,
+  "trained_steps": {
+   "drums/even": 64,
+   "drums/odd": 125,
+   "lead/even": 61,
+   "lead/odd": 55
+  }
+ }
+}
