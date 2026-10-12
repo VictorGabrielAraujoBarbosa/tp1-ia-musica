@@ -1,7 +1,6 @@
 # Engine internals
 
-How the pieces fit together. The web visualizer is optional; everything here
-is the assignment deliverable.
+How the pieces fit together (the assignment deliverable).
 
 ```
 race recording (gm-race/1)          configs/base.json + configs/pieces/*.json
@@ -73,8 +72,9 @@ Behavior notes:
 - Chains are per `(stem, meter)` because the grids differ (16 vs 14 steps).
   If a stem has no corpus for the current meter, the other meter's chain is
   used as fallback (the token vocabulary is meter-independent).
-- Trace logs (`gm-sync/1`) are the same schema the web demo reads; the extra
-  `.run.json` captures the config + metrics for reproducibility.
+- Trace logs (`gm-sync/1`) record the latched state and the musical choices
+  per bar; the extra `.run.json` captures the config + metrics for
+  reproducibility.
 
 ## Student code
 

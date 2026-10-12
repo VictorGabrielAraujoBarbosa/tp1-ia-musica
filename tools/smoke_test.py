@@ -42,7 +42,7 @@ def main() -> int:
 
     for race_name in ("comeback", "domination"):
         print(f"[{race_name}]")
-        race = RaceRecording.load(ROOT / "web" / "data" / f"{race_name}.json")
+        race = RaceRecording.load(ROOT / "races" / f"{race_name}.json")
         result = generate(
             race, corpus, cfg, dummy_hooks, OUT,
             chain_factory=dummy_hooks.chain_factory, name=race_name,

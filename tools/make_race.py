@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the scripted sample race recordings used by the visualizer demo.
+"""Generate the scripted sample race recordings used as game-state input.
 
 Pure stdlib, deterministic per seed.
 
@@ -14,7 +14,7 @@ domination  You lead from start to finish, no police. The control case: the
 Usage
 -----
     python3 tools/make_race.py                 # writes both races
-    python3 tools/make_race.py --out-dir web/data
+    python3 tools/make_race.py --out-dir races
 
 Output schema: see docs/contracts.md (gm-race/1).
 """
@@ -27,7 +27,7 @@ import random
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_OUT = ROOT / "web" / "data"
+DEFAULT_OUT = ROOT / "races"
 
 SAMPLE_HZ = 1
 

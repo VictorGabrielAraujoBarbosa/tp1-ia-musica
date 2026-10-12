@@ -25,7 +25,7 @@ class RaceRecording:
 
     Usage:
 
-        race = RaceRecording.load("web/data/comeback.json")
+        race = RaceRecording.load("races/comeback.json")
         state = race.sample(12.5)     # {"t": 12.5, "you": ..., "opp": ..., "police": ...}
     """
 

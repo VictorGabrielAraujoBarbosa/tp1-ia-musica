@@ -30,5 +30,7 @@ echo "soundfont ready: soundfonts/GeneralUser-GS.sf2"
 
 echo
 echo "setup OK. Next:"
+echo "  source .venv/bin/activate    # or use .venv/bin/python directly"
 echo "  python3 tools/import_loops.py"
 echo "  python3 tools/smoke_test.py"
+echo "  bash tools/run_all.sh         # regenerate every piece + reports"

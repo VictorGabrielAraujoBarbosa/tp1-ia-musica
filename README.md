@@ -1,147 +1,138 @@
-# Reactive generative music — race-reactive Markov engine
+# Composição Musical Algorítmica com Cadeias de Markov: Geração Simbólica de Lead & Drums
 
-Companion workspace for the "reactive generative music for games" assignment
-(DCC831, TP1). A scripted **race recording** (you / opponent / police, each
-0..1) drives an **order-n Markov chain** trained on **hand-crafted LMMS
-loops** in 4/4 and 7/8. The engine emits a reproducible `.mid` per run plus a
-bar-by-bar trace log; audio is rendered with FluidSynth + GeneralUser GS for
-audition and for the submission.
+Trabalho Prático 1 — DCC831 IA Generativa para Música (UFMG)
 
-The web visualizer in `web/` is an optional extra — not part of the
-deliverables — and reuses the same trace format.
+Sistema de composição musical **simbólica e reativa**: uma gravação simulada de
+corrida (você, oponente e polícia, cada um em `0..1`) é amostrada periodicamente
+e dirige cadeias de Markov treinadas em loops compostos à mão no LMMS, em 4/4 e
+7/8. A cada compasso o estado do jogo decide a métrica (4/4 quando à frente,
+7/8 quando atrás), quais instrumentos tocam e a temperatura de amostragem. A
+saída é um `.mid` reproduzível, renderizado em áudio com FluidSynth.
 
-## Repository layout
+📄 **Relatório (ISMIR, 2 páginas):** [`paper/tp1_musica.pdf`](paper/tp1_musica.pdf)
 
-```
-corpus/even/*.mid        hand-crafted 4/4 loops   (16 steps/bar)
-corpus/odd/*.mid         hand-crafted 7/8 loops   (14 steps/bar)
-corpus/corpus.json       generated: gm-corpus/1 (tokenized loops)
-engine/race.py           race recording loader + sample(t)             [harness]
-engine/generate.py       bar-by-bar harness: hooks -> chains -> outputs[harness]
-engine/midi_out.py       tokens -> .mid (mido; drums ch10)             [harness]
-engine/corpus.py         corpus I/O + training sequences               [harness]
-engine/hooks.py          state features + per-bar decisions            [STUDENT]
-engine/markov.py         the Markov chain (train/sample)               [STUDENT]
-tools/import_loops.py    LMMS .mid -> corpus.json
-tools/smoke_test.py      end-to-end test with fixture doubles
-tools/render_audio.py    .mid -> .ogg (FluidSynth + ffmpeg)
-tools/validate.py        contract checks for all three JSON schemas
-tools/stats.py           report tables from trace logs
-tools/memorization.py    verbatim-copy analysis (order trade-off evidence)
-tools/compare_pieces.py  step agreement between two pieces (same-config check)
-tools/run_all.sh         reproduce every piece from scratch
-configs/base.json        engine + instrument + track mapping
-configs/pieces/*.json    per-piece hyperparameters (seed/order/temperature/latch)
-docs/engine.md           engine internals and formats
-docs/contracts.md        gm-race/1, gm-sync/1, gm-bundles/1 schemas
-web/                     optional visualizer (vanilla JS, no build step)
-```
+## Músicas geradas
 
-## Setup
+Cinco peças, todas reproduzíveis a partir das mesmas entradas. Cada pasta em
+`output/` contém o áudio (`.ogg`), o simbólico (`.mid`), o registro por compasso
+(`.sync.json`) e a configuração da execução (`.run.json`).
 
-Needs: Python 3 (venv), `ffmpeg`, and `fluidsynth` for rendering. On Arch:
+| peça | ouvir/baixar | MIDI | corrida | ordem | semente | latch | temp. |
+|---|---|---|---|---|---|---|---|
+| comeback-a — baseline | [ogg](output/comeback-a/comeback.ogg) | [mid](output/comeback-a/comeback.mid) | comeback | 1 | 11 | 1 | 0.9 |
+| comeback-a2 — mesma configuração, outra semente | [ogg](output/comeback-a2/comeback.ogg) | [mid](output/comeback-a2/comeback.mid) | comeback | 1 | 12 | 1 | 0.9 |
+| comeback-b — ordem 2 ⭐ | [ogg](output/comeback-b/comeback.ogg) | [mid](output/comeback-b/comeback.mid) | comeback | 2 | 23 | 1 | 0.9 |
+| comeback-c — ordem 3 | [ogg](output/comeback-c/comeback.ogg) | [mid](output/comeback-c/comeback.mid) | comeback | 3 | 31 | 1 | 0.9 |
+| domination-a — caso-controle ⭐ | [ogg](output/domination-a/domination.ogg) | [mid](output/domination-a/domination.mid) | domination | 2 | 5 | 4 | 1.15 |
 
-```bash
-sudo pacman -S fluidsynth ffmpeg
-bash tools/setup.sh          # venv + mido + GeneralUser GS soundfont (~32 MiB)
-```
+⭐ = favoritas apontadas no relatório. "latch" = a cada quantos compassos o
+estado do jogo é reamostrado (hiperparâmetro `sample_every_bars`).
 
-## Reproduce the results
+## Método
 
-```bash
-.venv/bin/python tools/import_loops.py     # corpus .mid -> corpus/corpus.json
-.venv/bin/python tools/smoke_test.py       # harness check (fixture chains)
-bash tools/run_all.sh                      # 3 pieces: .mid + .ogg + validate + stats
-```
+1. **Composição (LMMS)** — loops em 4/4 e 7/8 com TripleOscillator (lead) e SF2
+   Player / General User GS (bateria), exportados em MIDI.
+2. **Tokenização** (`tools/import_loops.py`, `engine/corpus.py`) — grade de
+   semicolcheia (32 ticks): um token por passo são as notas que *começam* ali,
+   com altura e duração em passos; bateria vira nomes de vozes GM; `()` = nada
+   começa (pausa ou sustentação). Silêncio final por instrumento é removido.
+3. **Cadeias de Markov** (`engine/markov.py`) — uma cadeia por instrumento ×
+   métrica (4 cadeias), ordem configurável (padrão 2); probabilidades obtidas
+   por contagem das transições observadas, normalizadas por contexto, com
+   *backoff* progressivo de ordem n até 1 quando o histórico não aparece no
+   corpus; amostragem ponderada com temperatura.
+4. **Reatividade** (`engine/hooks.py`, `engine/generate.py`) — o estado da
+   corrida é amostrado a cada `sample_every_bars` compassos e decide métrica,
+   camadas ativas e temperatura.
+5. **Saída** — `.mid` via mido, registro `.sync.json` por compasso e áudio via
+   FluidSynth CLI + soundfont General User GS (`tools/render_audio.py`).
 
-Or one piece at a time:
+Detalhes técnicos: [`docs/engine.md`](docs/engine.md) (motor) e
+[`docs/contracts.md`](docs/contracts.md) (formatos JSON).
 
-```bash
-.venv/bin/python -m engine \
-    --race web/data/comeback.json \
-    --corpus corpus/corpus.json \
-    --config configs/pieces/comeback-a.json \
-    --out output/comeback-a
-.venv/bin/python tools/render_audio.py \
-    --mid output/comeback-a/comeback.mid --out output/comeback-a/comeback.ogg
-```
+## Resultados
 
-Pieces and their hyperparameter variation:
+**Reatividade** — nas peças de comeback, 100% dos compassos em 7/8 ocorrem
+quando o jogador está atrás; no caso-controle (sempre à frente), 0% em 7/8.
 
-| piece | race | order | seed | temperature | sample every |
-|---|---|---|---|---|---|
-| `comeback-a` | comeback | 1 | 11 | 0.9 | 1 bar |
-| `comeback-a2` | comeback | 1 | 12 | 0.9 | 1 bar |
-| `comeback-b` | comeback | 2 | 23 | 0.9 | 1 bar |
-| `comeback-c` | comeback | 3 | 31 | 0.9 | 1 bar |
-| `domination-a` | domination | 2 | 5 | 1.15 | 4 bars |
+| peça | compassos | duração | 7/8 % | 7/8 quando atrás | drums | lead | tensão méd/máx |
+|---|---|---|---|---|---|---|---|
+| comeback-a | 103 | 165 s | 50% | 100% | 82% | 88% | 0.61 / 1.00 |
+| comeback-a2 | 103 | 165 s | 50% | 100% | 82% | 88% | 0.61 / 1.00 |
+| comeback-b | 103 | 165 s | 50% | 100% | 82% | 88% | 0.61 / 1.00 |
+| comeback-c | 103 | 165 s | 50% | 100% | 82% | 88% | 0.61 / 1.00 |
+| domination-a | 88 | 151 s | 0% | — | 100% | 55% | 0.46 / 0.60 |
 
-`comeback-a`/`a2` share one configuration and differ only in the seed;
-`a → b → c` is the order ladder (1/2/3) with everything else fixed;
-`domination-a` varies the latch interval and temperature instead.
-`bash tools/run_all.sh` also writes `output/report-stats.md`,
-`output/report-memorization.md` and `output/report-same-config.md` with the
-tables used in the report.
+**Memorização** (Tabela 1 do relatório) — maior trecho gerado idêntico ao corpus
+e fração de passos cobertos por trechos de ≥ 4 passos:
 
-`sample_every_bars` is how often the race recording is re-sampled; bar length
-follows the current meter (4/4 = 16 sixteenths, 7/8 = 14).
+| peça | ordem | passos | maior trecho idêntico | cobertura ≥ 4 passos |
+|---|---|---|---|---|
+| comeback-a | 1 | 2630 | 13 | 78% |
+| comeback-a2 | 1 | 2630 | 13 | 75% |
+| comeback-b | 2 | 2630 | 29 | 100% |
+| comeback-c | 3 | 2630 | 28 | 100% |
+| domination-a | 2 | 2176 | 20 | 100% |
 
-## Composing the corpus in LMMS
+**Mesma configuração, sementes distintas** — `comeback-a` vs `comeback-a2`:
+36% dos tokens coincidem (drums 464/1278; lead 485/1352) — peças diferentes a
+partir da mesma configuração.
 
-1. Compose a loop; export each take as `.mid` into `corpus/even/` (4/4) or
-   `corpus/odd/` (7/8). Multiple loops per meter are fine and help the chain.
-2. Track names matter: `configs/base.json` maps `TripleOscillator` → lead and
-   `GeneralUser-GS` → drums (the LMMS export drops programs and puts every
-   track on channel 1, so names are the only reliable label).
-3. Keep events on the 16th-note grid; notes *starting* on a step become the
-   token, note lengths are quantized to steps. A stem may be shorter than the
-   file (e.g. a 2-bar drum take next to a 4-bar lead) — trailing silence is
-   trimmed when training.
-4. Run `tools/import_loops.py` and inspect the printed token grid.
+## Instalação e reprodução
 
-## What the student implements
-
-- `engine/hooks.py`:
-  - `conditions(state)` — one race sample `{t, you, opp, police}` →
-    `dict[str, bool]` features (e.g. behind, police close, final lap).
-  - `bar_context(conds, bar_index, prev)` — features → this bar's
-    `{"meter": "even"|"odd", "stems": {...}, "temperature": ...}` including
-    any hysteresis (see the `HoldCounter` helper).
-- `engine/markov.py`: `MarkovChain.__init__/train/sample` — counting,
-  normalization, smoothing and weighted sampling over the corpus tokens.
-
-Everything else (file I/O, timing, MIDI, traces) is harness code.
-
-## AI-use declaration
-
-Per the assignment rules, AI tools were used for auxiliary code and must be
-declared here, with links to the conversations.
-
-> **TODO before submission:** paste the conversation links here.
->
-> AI provided: the project scaffold and auxiliary code (race JSON loader,
-> corpus importer/quantizer, generation harness, MIDI/trace writers, render,
-> validation and statistics scripts, docs) and the *interface stubs* in
-> `engine/hooks.py` and `engine/markov.py`. The Markov method itself
-> (transition counting, smoothing, sampling) and the state/decision logic
-> (`conditions`, `bar_context`) were implemented by the student; at the
-> student's request, AI also fixed syntax/runtime errors in those two files
-> (dict-literal keys, a missing return, a wrong state key) without changing
-> the logic. The abstract and paper text were written by the student.
-
-## Web visualizer (optional)
-
-The page is bundle-driven: each entry in `web/data/bundles.json` pairs a race
-recording with its trace log and audio, so no page changes are needed per
-piece. `bash tools/run_all.sh` publishes generated pieces automatically (via
-`tools/install_bundle.py`, which copies trace + audio into `web/` and sets
-`placeholder: false`). To view:
+Requisitos: Python 3, `ffmpeg` e `fluidsynth` (Arch: `sudo pacman -S fluidsynth ffmpeg`).
 
 ```bash
-cd web && python3 -m http.server 8000   # open http://localhost:8000
+bash tools/setup.sh                     # venv + mido + soundfont General User GS
+.venv/bin/python tools/import_loops.py  # corpus/*.mid -> corpus/corpus.json
+bash tools/run_all.sh                   # gera as 5 peças, renderiza, valida e relata
 ```
 
-"Comeback A/B" show the two generated takes against the comeback race;
-"Domination A" is the control case. The original stand-in bundles remain at
-the bottom of the picker for comparison. See `docs/contracts.md` for the
-underlying schemas.
+`run_all.sh` escreve também `output/report-stats.md`,
+`output/report-memorization.md` e `output/report-same-config.md`. Para uma peça
+individual:
+
+```bash
+.venv/bin/python -m engine --race races/comeback.json --corpus corpus/corpus.json \
+    --config configs/pieces/comeback-b.json --out output/comeback-b
+.venv/bin/python tools/render_audio.py --mid output/comeback-b/comeback.mid \
+    --out output/comeback-b/comeback.ogg
+```
+
+Dependências Python: [`requirements.txt`](requirements.txt) (`mido`).
+
+## Estrutura do repositório
+
+```
+races/        gravações de corrida (gm-race/1): comeback e domination
+corpus/       loops autorais: even/ (4/4) e odd/ (7/8) + corpus.json tokenizado
+engine/       motor: race, hooks, markov, generate, midi_out, corpus, cli
+configs/      hiperparâmetros: base.json + pieces/*.json
+tools/        import_loops, render_audio, validate, stats, memorization,
+              compare_pieces, run_all.sh, setup.sh, smoke_test.py
+output/       peças geradas + relatórios das análises
+paper/        tp1_musica.pdf
+docs/         engine.md, contracts.md, conversa-pesquisa-ia.md
+```
+
+## Declaração de uso de IA
+
+> TODO antes da submissão: inserir os links das conversas de desenvolvimento.
+
+Ferramentas de IA foram usadas como **apoio**: geração de código auxiliar
+(importador do corpus, motor de geração, escritores de MIDI/registro, render,
+validação e análises), gerenciamento de ambiente de teste, pesquisa
+bibliográfica, instalação de dependências, testes automatizados, prototipação
+de experimentos e formatação do relatório. A implementação do método —
+tokenização, cadeia de Markov (`engine/markov.py`) e regras de reação ao jogo
+(`engine/hooks.py`) — e o texto do relatório são de autoria do estudante; a IA
+também aplicou correções mecânicas pontuais nesses arquivos a pedido do autor.
+Conversas:
+
+- Primeira conversa de pesquisa: [`docs/conversa-pesquisa-ia.md`](docs/conversa-pesquisa-ia.md)
+- Desenvolvimento: **TODO (links das conversas)**
+
+## Referências
+
+[1] A. Prechtl, R. Laney, A. Willis, and R. Samuels, "Algorithmic music as
+intelligent game music," in *Proc. of the AISB50*, London, UK, Apr. 2014.

@@ -1,20 +1,20 @@
 # Data contracts
 
-Three JSON files connect the sample races, the Markov engine (work machine)
-and the web visualizer. Everything is plain JSON, offline and deterministic.
+Two JSON files connect the race recordings and the Markov engine.
+Everything is plain JSON, offline and deterministic.
 
 ## 1. Race recording — `gm-race/1`
 
-Produced by `tools/make_race.py`. This is also the interface a real game must
-implement: on every tick, expose `{you, opp, police}` progress in `[0, 1]`,
-then the music system samples it.
+Produced by `tools/make_race.py` (files in `races/`). This is also the
+interface a real game must implement: on every tick, expose
+`{you, opp, police}` progress in `[0, 1]`, then the music system samples it.
 
 | field | type | notes |
 |---|---|---|
 | `format` | `"gm-race/1"` | schema id |
-| `name` | string | bundle id, e.g. `comeback` |
-| `title` | string | optional, UI label |
-| `description` | string | optional, UI note |
+| `name` | string | id, e.g. `comeback` |
+| `title` | string | optional, label |
+| `description` | string | optional, note |
 | `sample_hz` | int | `1` |
 | `duration_s` | int | race length in seconds |
 | `events` | array | `{t, type}`; types: `police_spawn`, `final_lap`, `finish` |
@@ -22,13 +22,12 @@ then the music system samples it.
 | `samples[].you`, `.opp` | float | progress in `[0, 1]`, non-decreasing |
 | `samples[].police` | float or `null` | `null` = not yet spawned |
 
-## 2. Sync log — `gm-sync/1`
+## 2. Trace log — `gm-sync/1`
 
-Produced by the engine. Stand-in for now: `tools/make_demo_bundle.py` mirrors
-the latch/hysteresis policy the real engine will use, so the page can be tested
-end-to-end. One entry per generated bar; the visualizer interpolates between
-entries. It doubles as the evaluation log for the report (meter time-share,
-layer statistics).
+Produced by the engine next to each generated `.mid`, one entry per generated
+bar. It records the latched race state and the musical decisions of each bar
+and doubles as the evaluation log for the report (meter time-share, layer
+statistics, tension).
 
 | field | type | notes |
 |---|---|---|
@@ -48,38 +47,3 @@ Invariants:
 - Bar duration = `meter_quarters * 60 / bpm`, where
   `meter_quarters = num * 4 / den` (4/4 → 4, 7/8 → 3.5).
 - `layers` and `meter` change only at bar boundaries.
-
-## 3. Bundle manifest — `gm-bundles/1`
-
-`web/data/bundles.json` lists what the visualizer can load. Paths are relative
-to `web/`, so the page works from any static HTTP server.
-
-```json
-{
-  "format": "gm-bundles/1",
-  "bundles": [
-    {
-      "id": "comeback",
-      "name": "Comeback",
-      "description": "Early lead, overtaken, police chase, fight back and win.",
-      "race": "data/comeback.json",
-      "sync": "data/comeback.sync.json",
-      "audio": "audio/comeback.ogg",
-      "placeholder": true
-    }
-  ]
-}
-```
-
-`placeholder: true` means stand-in audio/sync; `false` means real engine output.
-The page treats both identically.
-
-## The swap
-
-When the Markov engine exists on the work machine it must:
-
-1. emit `web/data/<name>.sync.json` with the `gm-sync/1` schema,
-2. render `<name>.mid` to `web/audio/<name>.ogg` (FluidSynth + soundfont),
-3. add or update its entry in `bundles.json`.
-
-No page code changes are required.

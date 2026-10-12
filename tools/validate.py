@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Validate gm-race/1, gm-corpus/1 and gm-sync/1 files.
 
-    python3 tools/validate.py web/data/comeback.json corpus/corpus.json output/*/comeback.sync.json
+    python3 tools/validate.py races/comeback.json corpus/corpus.json output/*/comeback.sync.json
 
 Exits non-zero if any file has errors. Checks the invariants listed in
 docs/contracts.md (monotonic time, bar duration from meter + bpm, ranges,

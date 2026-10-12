@@ -2,7 +2,7 @@
 """Command line entry point.
 
     python -m engine \\
-        --race web/data/comeback.json \\
+        --race races/comeback.json \\
         --corpus corpus/corpus.json \\
         --config configs/pieces/comeback-a.json \\
         --out output/comeback-a
@@ -38,7 +38,7 @@ def load_config(path: str | Path) -> dict:
 
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description="Generate one piece for one race recording.")
-    ap.add_argument("--race", required=True, help="gm-race/1 recording (e.g. web/data/comeback.json)")
+    ap.add_argument("--race", required=True, help="gm-race/1 recording (e.g. races/comeback.json)")
     ap.add_argument("--corpus", default="corpus/corpus.json", help="gm-corpus/1 file")
     ap.add_argument("--config", default="configs/base.json", help="piece config (merged over configs/base.json)")
     ap.add_argument("--out", default=None, help="output directory (default: output/<piece name>)")

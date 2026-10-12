@@ -9,20 +9,18 @@ PY=.venv/bin/python
 $PY tools/import_loops.py
 
 run_piece() {
-  local piece="$1" race="$2" label="$3"
-  $PY -m engine --race "web/data/$race.json" --corpus corpus/corpus.json \
+  local piece="$1" race="$2"
+  $PY -m engine --race "races/$race.json" --corpus corpus/corpus.json \
       --config "configs/pieces/$piece.json" --out "output/$piece"
   $PY tools/render_audio.py --mid "output/$piece/$race.mid" --out "output/$piece/$race.ogg"
   $PY tools/validate.py "output/$piece/$race.sync.json"
-  $PY tools/install_bundle.py --src "output/$piece" --race "web/data/$race.json" \
-      --id "$piece" --name "$label"
 }
 
-run_piece comeback-a comeback "Comeback A"
-run_piece comeback-a2 comeback "Comeback A2"
-run_piece comeback-b comeback "Comeback B"
-run_piece comeback-c comeback "Comeback C"
-run_piece domination-a domination "Domination A"
+run_piece comeback-a comeback
+run_piece comeback-a2 comeback
+run_piece comeback-b comeback
+run_piece comeback-c comeback
+run_piece domination-a domination
 
 echo
 $PY tools/stats.py output/[!_]*/*.sync.json | tee output/report-stats.md
