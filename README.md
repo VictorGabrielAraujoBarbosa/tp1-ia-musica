@@ -117,7 +117,7 @@ docs/         engine.md, contracts.md, conversa-pesquisa-ia.md
 
 ## Declaração de uso de IA
 
-> TODO antes da submissão: inserir os links das conversas de desenvolvimento.
+https://assistant.kagi.com/share/8ef6286f-c805-40f3-aaf5-dfc83b6dd913
 
 Ferramentas de IA foram usadas como **apoio**: geração de código auxiliar
 (importador do corpus, motor de geração, escritores de MIDI/registro, render,
@@ -129,8 +129,9 @@ tokenização, cadeia de Markov (`engine/markov.py`) e regras de reação ao jog
 também aplicou correções mecânicas pontuais nesses arquivos a pedido do autor.
 Conversas:
 
-- Primeira conversa de pesquisa: [`docs/conversa-pesquisa-ia.md`](docs/conversa-pesquisa-ia.md)
-- Desenvolvimento: **TODO (links das conversas)**
+- Conversa de pesquisa: [`docs/conversa-pesquisa-ia.md`](docs/conversa-pesquisa-ia.md)
+- Para o desenvolvimento desse trabalho, foi usado opencode. A conversa de desenvolvimento está misturada com o thinking trace do agente, chamadas de ferramentas, arquivos acessados, entre outros. Um dump pode ser arranjado, se necessário.
+- Esse README foi gerado por IA, e subsequentemente editado pelo estudante.
 
 ## Referências
 
